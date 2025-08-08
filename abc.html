@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>Image Display</title>
   <style>
+    /* Updated style for a larger image */
     #myImage {
-      width: 300px;
+      width: 600px; /* Increased width */
       height: auto;
       border: 2px solid #000;
     }
@@ -15,17 +16,20 @@
 
   <h2>My Image</h2>
 
-  <!-- This is where the image appears -->
-  <img id="myImage" src="your-image.jpg" alt="Sample Image">
+  <!-- Image removed -->
 
   <br><br>
 
-  <!-- Button to change image using JavaScript -->
+  <!-- Button still here, in case you re-add the image -->
   <button onclick="changeImage()">Change Image</button>
 
   <script>
     function changeImage() {
-      document.getElementById("myImage").src = "another-image.jpg";
+      // This code will do nothing now since the image element is gone
+      const image = document.getElementById("myImage");
+      if (image) {
+        image.src = "another-image.jpg";
+      }
     }
   </script>
 
