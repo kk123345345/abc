@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Display</title>
+  <style>
+    #myImage {
+      width: 300px;
+      height: auto;
+      border: 2px solid #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>My Image</h2>
+
+  <!-- This is where the image appears -->
+  <img id="myImage" src="your-image.jpg" alt="Sample Image">
+
+  <br><br>
+
+  <!-- Button to change image using JavaScript -->
+  <button onclick="changeImage()">Change Image</button>
+
+  <script>
+    function changeImage() {
+      document.getElementById("myImage").src = "another-image.jpg";
+    }
+  </script>
+
+</body>
+</html>
