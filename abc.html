@@ -2,36 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Image Display</title>
-  <style>
-    /* Updated style for a larger image */
-    #myImage {
-      width: 600px; /* Increased width */
-      height: auto;
-      border: 2px solid #000;
-    }
-  </style>
+  <title>Display Image</title>
 </head>
 <body>
 
-  <h2>My Image</h2>
-
-  <!-- Image removed -->
-
-  <br><br>
-
-  <!-- Button still here, in case you re-add the image -->
-  <button onclick="changeImage()">Change Image</button>
-
-  <script>
-    function changeImage() {
-      // This code will do nothing now since the image element is gone
-      const image = document.getElementById("myImage");
-      if (image) {
-        image.src = "another-image.jpg";
-      }
-    }
-  </script>
+  <h2>Here is an Image:</h2>
+  <img src="myImage.jpg" alt="Sample Image" width="300">
 
 </body>
 </html>
